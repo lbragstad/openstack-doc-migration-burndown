@@ -41,9 +41,6 @@ openstack/ironic-python-agent
 openstack/ironic-ui
 openstack/karbor
 openstack/karbor-dashboard
-openstack/keystone
-openstack/keystoneauth
-openstack/keystonemiddleware
 openstack/kolla-kubernetes
 openstack/kuryr
 openstack/kuryr-kubernetes
@@ -61,10 +58,6 @@ openstack/monasca-log-api
 openstack/monasca-statsd
 openstack/monasca-transform
 openstack/mox3
-openstack/murano
-openstack/murano-agent
-openstack/murano-dashboard
-openstack/murano-pkg-check
 openstack/networking-bagpipe
 openstack/networking-bgpvpn
 openstack/networking-hyperv
@@ -78,9 +71,6 @@ openstack/neutron-fwaas
 openstack/neutron-lbaas
 openstack/neutron-lbaas-dashboard
 openstack/neutron-lib
-openstack/nova
-openstack/octavia
-openstack/octavia-dashboard
 openstack/openstack-ansible
 openstack/openstack-ansible-apt_package_pinning
 openstack/openstack-ansible-ceph_client
@@ -175,7 +165,6 @@ openstack/python-manilaclient
 openstack/python-mistralclient
 openstack/python-muranoclient
 openstack/python-neutronclient
-openstack/python-novaclient
 openstack/python-octaviaclient
 openstack/python-openstackclient
 openstack/python-pankoclient

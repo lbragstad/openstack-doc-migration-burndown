@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Documentation Migration Burndown</title>
+<title>Policy Burndown</title>
 <meta charset="utf-8">
 <meta http-equiv="refresh" content="3600">
 <style type="text/css">
@@ -34,21 +34,21 @@
 </style>
 </head>
 <body>
-  <h1>Documentation Migration Burndown</h1>
+  <h1>Policy Burndown</h1>
 
 
 <p>This is a burndown of the number of changes and repositories left
 to complete
-the <a href="https://specs.openstack.org/openstack/docs-specs/specs/pike/os-manuals-migration.html">documentation
-migration</a>. The tools are available via
-<a href="https://github.com/dhellmann/openstack-doc-migration-burndown">the
+the <a href="https://governance.openstack.org/tc/goals/queens/policy-in-code.html">policy
+in code</a> community goal for Queens. The tools are available via
+<a href="https://github.com/lbragstad/openstack-doc-migration-burndown">the
 github repo</a>.</p>
 
 <p>Help by
-reviewing <a href="https://review.openstack.org/#/q/topic:doc-migration%20is:open">pending
+reviewing <a href="https://review.openstack.org/#/q/topic:policy-and-docs-in-code%20is:open">pending
 changes</a>.</p>
 
-<p>Last updated: Sat Aug  5 19:00:52 UTC 2017
+<p>Last updated: Tue Sep  5 17:43:53 UTC 2017
 </p>
 
 
@@ -58,8 +58,6 @@ changes</a>.</p>
 <td id="changes">
 </td>
 <td id="not-started">
-</td>
-<td id="missing-urls">
 </td>
 </tr>
 </table>
@@ -178,7 +176,7 @@ changes</a>.</p>
               .enter()
               .append('td')
               .html(function (d) {
-                  return "<a href=https://review.openstack.org/#/q/is:open+topic:doc-migration+project:" + d.value + ">" + d.value + "</a>";
+                  return "<a href=https://review.openstack.org/#/q/is:open+topic:policy-and-docs-in-code+project:" + d.value + ">" + d.value + "</a>";
               });
 
           return table;
@@ -223,43 +221,6 @@ changes</a>.</p>
       tabulate(data, ['Repos Not Started']);
   });
 
-  d3.json("missing_urls.json", function(data) {
-      function tabulate(data, columns) {
-          var table = d3.select('#missing-urls').append('table').attr("class", "todo");
-          var thead = table.append('thead')
-          var tbody = table.append('tbody');
-
-          // append the header row
-          thead.append('tr')
-              .selectAll('th')
-              .data(columns).enter()
-              .append('th')
-              .text(function (column) { return column; });
-
-          // create a row for each object in the data
-          var rows = tbody.selectAll('tr')
-              .data(data)
-              .enter()
-              .append('tr');
-
-          // create a cell in each row for each column
-          var cells = rows.selectAll('td')
-              .data(function (row) {
-                  return columns.map(function (column) {
-                      return {column: column, value: row[column]};
-                  });
-              })
-              .enter()
-              .append('td')
-              .html(function (d) {
-                  return "<a href=" + d.value + ">" + d.value + "</a>";
-              });
-
-          return table;
-	}
-      // render the table(s)
-      tabulate(data, ['Missing URLs']);
-  });
 </script>
 
 </body>
