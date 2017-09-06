@@ -20,9 +20,7 @@ openstack/freezer-api
 openstack/fuxi
 openstack/fuxi-kubernetes
 openstack/glance
-openstack/glance_store
 openstack/heat
-openstack/heat-cfntools
 openstack/heat-translator
 openstack/ironic
 openstack/karbor
