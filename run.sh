@@ -14,9 +14,8 @@ source .venv/bin/activate
 
 ./gen-burndown.py
 
-#exit $?
-
 sed -i "s/Last updated:.*/Last updated: $(date -u)/" index.html
 
 git add data.* *.json index.html
 git commit -m "Updated csv"
+git push origin master
