@@ -20,8 +20,8 @@ sed -i "s/Last updated:.*/Last updated: $(date -u)/" index.html
 
 # FIXME(lbragstad): Use this eventually to keep results in source controller
 # and updated automatically.
-# git add data.* *.json index.html
-# git commit -m "Updated csv"
+git add data.* *.json index.html
+git commit -m "Updated csv"
 
 # FIXME(lbragstad): Switch back to this eventually once I figure out a way to
 # integrate this into my blog, instead of Doug's.
