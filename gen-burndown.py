@@ -10,7 +10,7 @@ import requests
 from requests.auth import HTTPDigestAuth
 
 PROJECT_SITE = "https://review.openstack.org/changes/"
-QUERY = "q=topic:^policy-and-docs-in-code.*"
+QUERY = "q=topic:policy-and-docs-in-code"
 URL = "%s?%s" % (PROJECT_SITE, QUERY)
 
 
