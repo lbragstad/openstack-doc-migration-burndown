@@ -19,7 +19,6 @@ openstack/networking-odl
 openstack/neutron
 openstack/neutron-dynamic-routing
 openstack/neutron-fwaas
-openstack/neutron-lbaas
 openstack/neutron-lib
 openstack/panko
 openstack/sahara
