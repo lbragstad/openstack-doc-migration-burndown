@@ -17,9 +17,6 @@ openstack/networking-bgpvpn
 openstack/networking-midonet
 openstack/networking-odl
 openstack/neutron
-openstack/neutron-dynamic-routing
-openstack/neutron-fwaas
-openstack/neutron-lib
 openstack/panko
 openstack/sahara
 openstack/searchlight
