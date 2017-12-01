@@ -1,6 +1,5 @@
 openstack/aodh
 openstack/barbican
-openstack/ceilometer
 openstack/cinder
 openstack/cloudkitty
 openstack/congress
@@ -13,15 +12,11 @@ openstack/karbor
 openstack/magnum
 openstack/manila
 openstack/mistral
-openstack/networking-bgpvpn
-openstack/networking-midonet
-openstack/networking-odl
 openstack/neutron
 openstack/panko
 openstack/sahara
 openstack/searchlight
 openstack/senlin
-openstack/swift
 openstack/tricircle
 openstack/trove
 openstack/vitrage
